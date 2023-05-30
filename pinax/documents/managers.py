@@ -64,5 +64,5 @@ class SharedMemberQuerySet(QuerySet):
             yield obj
 
     def _chain(self, **kwargs):
-        kwargs["user"] = self.user
+        #kwargs["user"] = self.user
         return super()._chain(**kwargs)
